@@ -1,0 +1,1921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="description" content="Miminium Admin Template v.1">
+    <meta name="author" content="Isna Nur Azis">
+    <meta name="keyword" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Miminium</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css"
+          integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/funtion.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+
+
+    <!-- Font-Awesome -->
+    <script src="https://use.fontawesome.com/48bbc759d5.js"></script>
+
+</head>
+<body style="background-color:#003C66">
+<nav class="navbar navbar-findcond navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="img/logo.jpg" style="width: 50px;height: 50px;"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i
+                            class="fa fa-fw fas fa-bell"></i><span class="badge">4</span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#"><i class="fa fa-fw fa-tag"></i> <span class="badge">PABUC</span>Tiempos de
+                            atencion correctos</a></li>
+                        <li><a href="#"><i class="fa fa-fw fa-thumbs-o-up"></i> <span class="badge">PABLOS</span>10
+                            Turnos Sin atender</a></li>
+                        <li><a href="#"><i class="fa fa-fw fa-thumbs-o-up"></i> <span class="badge">SEPBO</span>Usuario
+                            jperez con el mejor tiempo de atencion</a></li>
+                        <li><a href="#"><i class="fa fa-fw fa-thumbs-o-up"></i> <span class="badge">PABAR</span>Todos
+                            las sucursales activas</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i
+                            class=" fa fa-fw far fa-comment"></i><span class="badge">3</span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#"><i class="fa fa-fw fas fa-magic"></i> <span class="badge">PAFLO</span>DashBoard
+                            Actualizado</a></li>
+                        <li><a href="#"><i class="fa fa-fw fa fas fa-download"></i> <span
+                                class="badge">Sucursales</span>Descarga ya el nuevo reporte</a></li>
+                        <li><a href="#"><i class="fa fa-fw fas fa-clock"></i><span class="badge">PACAL</span>Llevas
+                            mucho tiempo sin visitar esta sucursal</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn" type="button" href="#Principal" data-toggle="tab"><span
+                            class="fa fa-home"></span> Inicio</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<br>
+<div class="container">
+    <div class="tab-content">
+        <div class="contenedor tab-pane active" id="cuadritos">
+            <div class="barras col-md-1 jumbotros ">
+                <button href="#Armenia" data-toggle="tab" class="btn btn-xs"
+                        style="background-color: #FFD213;color:#003C66">SEPBO
+                </button>
+            </div>
+            <div class="barras col-md-1 jumbotros">
+                <button href="#Armenia" data-toggle="tab" class="btn btn-xs"
+                        style="background-color: #FFD213;color:#003C66">PAMOL
+                </button>
+            </div>
+            <div class="barras col-md-1 jumbotros">
+                <button href="#Armenia" data-toggle="tab" class="btn btn-xs"
+                        style="background-color: #FFD213;color:#003C66">PAMED
+                </button>
+            </div>
+            <div class="barras col-md-1 jumbotros">
+                <button href="#Armenia" data-toggle="tab" class="btn btn-xs"
+                        style="background-color: #FFD213;color:#003C66">PACAL
+                </button>
+            </div>
+            <div class="barras col-md-1 jumbotros">
+                <button href="#Armenia" data-toggle="tab" class="btn btn-xs"
+                        style="background-color: #FFD213;color:#003C66">PABUC
+                </button>
+            </div>
+            <div class="barras col-md-1 jumbotros">
+                <button href="#Armenia" data-toggle="tab" class="btn btn-xs"
+                        style="background-color: #FFD213;color:#003C66">PABAR
+                </button>
+            </div>
+            <div class="barras col-md-1 jumbotros">
+                <button href="#Armenia" data-toggle="tab" class="btn btn-xs"
+                        style="background-color: #FFD213;color:#003C66">PAIBA
+                </button>
+            </div>
+            <div class="barras col-md-1 jumbotros" style="text-align: center;">
+                <button href="#Armenia" data-toggle="tab" class="btn btn-xs"
+                        style="background-color: #FFD213;color:#003C66">PAFLO
+                </button>
+            </div>
+            <button class="btn btn-info" data-toggle="tab" href="#carrusel">
+                <span class="fa fa-hand-o-right" style="color: #FFD213"></span>
+            </button>
+        </div>
+        <div class="container tab-pane" id="carrusel">
+            <div class="text-center" style="font-family: 'Staatliches', cursive; color:#FFD213; padding:100px">
+                <h1>DashBoard, Caja Honor</h1>
+                <button class="btn btn-info" data-toggle="tab" href="#cuadritos">
+                    <span class="fa fa-hand-o-right" style="color: #FFD213"></span>
+                </button>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <div class="well">
+                        <div id="myCarousel tab-pane" class="carousel fdi-Carousel slide">
+                            <!-- Carousel items -->
+                            <div class="carousel fdi-Carousel slide" id="eventCarousel" data-interval="0">
+                                <div class="carousel-inner onebyone-carosel">
+                                    <br>
+                                    <div class="item active">
+                                        <div class="col-md-4">
+                                            <div class="jumbotron center-block text-center"
+                                                 style="background-color: #003C66;font-family: 'Staatliches', cursive; color:#FFD213; font-weight: bold;">
+                                                SEPBO
+                                            </div>
+                                            <div class="text-center">
+                                                <button href="#Armenia" data-toggle="tab" class="btn btn-xs"
+                                                        style="background-color: #FFD213;color:#003C66">Ver Mas
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-4">
+                                            <div class="jumbotron center-block text-center"
+                                                 style="background-color: #003C66;font-family: 'Staatliches', cursive; color:#FFD213; font-weight: bold;">
+                                                PAMOL2
+                                            </div>
+                                            <div class="text-center">
+                                                <button href="#Armenia" data-toggle="tab" class="btn btn-xs"
+                                                        style="background-color: #FFD213;color:#003C66">Ver Mas
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-4">
+                                            <div class="jumbotron center-block text-center"
+                                                 style="background-color: #003C66;font-family: 'Staatliches', cursive; color:#FFD213; font-weight: bold;">
+                                                PAMOL
+                                            </div>
+                                            <div class="text-center">
+                                                <button href="#Bogota" data-toggle="tab" class="btn btn-xs"
+                                                        style="background-color: #FFD213;color:#003C66">Ver Mas
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-4">
+                                            <div class="jumbotron center-block text-center"
+                                                 style="background-color: #003C66;font-family: 'Staatliches', cursive; color:#FFD213; font-weight: bold;">
+                                                PAMED
+                                            </div>
+                                            <div class="text-center">
+                                                <button href="#Pereira" data-toggle="tab" class="btn btn-xs"
+                                                        style="background-color: #FFD213;color:#003C66">Ver Mas
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-4">
+                                            <div class="jumbotron center-block text-center"
+                                                 style="background-color: #003C66;font-family: 'Staatliches', cursive; color:#FFD213; font-weight: bold;">
+                                                PACAL
+                                            </div>
+                                            <div class="text-center">
+                                                <button href="#Manizales" data-toggle="tab" class="btn btn-xs"
+                                                        style="background-color: #FFD213;color:#003C66">Ver
+                                                    Mas
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-4">
+                                            <div class="jumbotron center-block text-center"
+                                                 style="background-color: #003C66;font-family: 'Staatliches', cursive; color:#FFD213;font-weight: bold;">
+                                                PABUC
+                                            </div>
+                                            <div class="text-center">
+                                                <button href="#Cucuta" data-toggle="tab" class="btn btn-xs"
+                                                        style="background-color: #FFD213;color:#003C66">Ver Mas
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-4">
+                                            <div class="jumbotron center-block text-center"
+                                                 style="background-color: #003C66;font-family: 'Staatliches', cursive; color:#FFD213;font-weight: bold;">
+                                                PABAR
+                                            </div>
+                                            <div class="text-center">
+                                                <button href="#Cartagena" data-toggle="tab" class="btn btn-xs"
+                                                        style="background-color: #FFD213;color:#003C66">Ver
+                                                    Mas
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-4">
+                                            <div class="jumbotron center-block text-center"
+                                                 style="background-color: #003C66;font-family: 'Staatliches', cursive; color:#FFD213;font-weight: bold;">
+                                                PACAR
+                                            </div>
+                                            <div class="text-center">
+                                                <button href="#Armenia" data-toggle="tab" class="btn btn-xs"
+                                                        style="background-color: #FFD213;color:#003C66">Ver Mas
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-4">
+                                            <div class="jumbotron center-block text-center"
+                                                 style="background-color: #003C66;font-family: 'Staatliches', cursive; color:#FFD213;font-weight: bold;">
+                                                PAIBA
+                                            </div>
+                                            <div class="text-center">
+                                                <button href="#Armenia" data-toggle="tab" class="btn btn-xs"
+                                                        style="background-color: #FFD213;color:#003C66">Ver Mas
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-4">
+                                            <div class="jumbotron center-block text-center"
+                                                 style="background-color: #003C66;font-family: 'Staatliches', cursive; color:#FFD213;font-weight: bold;">
+                                                PAFLO
+                                            </div>
+                                            <div class="text-center">
+                                                <button href="#Armenia" data-toggle="tab" class="btn btn-xs"
+                                                        style="background-color: #FFD213 ;color:#003C66">Ver Mas
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-4">
+                                            <div class="jumbotron center-block text-center"
+                                                 style="background-color: #003C66;font-family: 'Staatliches', cursive; color:#FFD213;font-weight: bold;">
+                                                PAFLO
+                                            </div>
+                                            <div class="text-center">
+                                                <button href="#Armenia" data-toggle="tab" class="btn btn-xs"
+                                                        style="background-color: #FFD213; color:#003C66">Ver Mas
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-4">
+                                            <div class="jumbotron center-block text-center"
+                                                 style="background-color: #003C66;font-family: 'Staatliches', cursive; color:#FFD213;font-weight: bold;">
+                                                PAFLOS
+                                            </div>
+                                            <div class="text-center">
+                                                <button href="#Armenia" data-toggle="tab" class="btn btn-xs"
+                                                        style="background-color: #FFD213; color:#003C66">Ver Mas
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-4">
+                                            <div class="jumbotron center-block text-center"
+                                                 style="background-color: #003C66;font-family: 'Staatliches', cursive; color:#FFD213;font-weight: bold;">
+                                                PAIBA
+                                            </div>
+                                            <div class="text-center">
+                                                <button href="#Armenia" data-toggle="tab" class="btn btn-xs"
+                                                        style="background-color: #FFD213; color:#003C66">Ver Mas
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-4">
+                                            <div class="jumbotron center-block text-center"
+                                                 style="background-color: #003C66;font-family: 'Staatliches', cursive; color:#FFD213;font-weight: bold;">
+                                                INICIO
+                                            </div>
+                                            <div class="text-center">
+                                                <button href="#Principal" data-toggle="tab" class="btn btn-xs"
+                                                        style="background-color: #FFD213; color:#003C66">Ver Mas
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="left carousel-control" href="#eventCarousel" data-slide="prev"><span
+                                        class="glyphicon glyphicon-chevron-left"></span></a>
+                                <a class="right carousel-control" href="#eventCarousel" data-slide="next"><span
+                                        class="glyphicon glyphicon-chevron-right"></span></a>
+                            </div>
+                            <!--/carousel-inner-->
+                        </div><!--/myCarousel-->
+                    </div><!--/well-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="box">
+    <div class="tab-content">
+        <div class="tab-pane active" id="Principal">
+            <!--Inicio principal 1-->
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="box-part text-center">
+                    <canvas id="updatingss" width="800" height="450"></canvas>
+                    <br>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">
+                        <span class="glyphicon glyphicon-fullscreen"></span></button>
+                    <script>
+                        var canvas = document.getElementById('updatingss'),
+                            startingData = {
+                                labels: ['8 AM', '10 AM', '12 PM', '2 PM', '4 PM', '6 PM'],
+                                datasets: [
+                                    {
+                                        label: ["Tiempo SEPBO"],
+                                        backgroundColor: "rgba(25, 0, 125, 0.5)",
+                                        borderColor: "rgba(0, 252, 30, 7)",
+                                        data: [65, 59, 80, 100, 56, 55]
+                                    },
+                                    {
+                                        label: ["Tiempo PAMED"],
+                                        backgroundColor: "rgba(0, 0, 255, 0.5)",
+                                        borderColor: "rgba(255, 152, 0, 1)",
+                                        data: [28, 48, 40, 19, 86, 27]
+                                    }
+                                ]
+                            };
+                        // Reduce the animation steps for demo clarity.
+                        var myLiveChar = new Chart(canvas, {
+                            type: 'line',
+                            data: startingData,
+                            options: {
+                                title: {
+                                    display: true,
+                                    text: 'Tiempo Mejores Sucursales',
+                                    fontSize: 20
+                                },
+                                scales: {
+                                    yAxes: [{
+                                        ticks: {
+                                            stepSize: 40,
+                                        },
+                                        scaleLabel: {
+                                            display: true,
+                                            labelString: 'Total Turnos Atendidos',
+                                            fontSize: 20
+                                        }
+                                    }],
+                                    xAxes: [{
+                                        scaleLabel: {
+                                            display: true,
+                                            labelString: 'Horas del dia',
+                                            fontSize: 20
+                                        }
+                                    }],
+                                }
+                            }
+                        });
+                        setInterval(function () {
+                            // Get a random index point
+                            var indexTo = Math.round(Math.random() * startingData.labels.length);
+
+                            // Update one of the points in the second dataset
+                            myLiveChar.data.datasets[indexTo].data[indexTo] = Math.random() * 100;
+
+                            myLiveChar.update();
+                        }, 5000);
+
+                    </script>
+                </div>
+            </div>
+            <!--Fin Principal 1-->
+            <!-- Modal -->
+            <div class="modal fullscreen-modal fade" id="myModal1" tabindex="-1" role="dialog"
+                 aria-labelledby="myModalLabel1">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel1">Promedio de servicios genereales de todas
+                                las sucursales</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div id="chartm1">
+                                <canvas id="updating-m1" width="800" height="450"></canvas>
+                            </div>
+                            <script>
+                                var canvas = document.getElementById('updating-m1'),
+                                    startingData = {
+                                        labels: ['8 AM', '10 AM', '12 PM', '2 PM', '4 PM', '6 PM'],
+                                        datasets: [
+                                            {
+                                                label: ["Tiempo SEPBO"],
+                                                backgroundColor: "rgba(25, 0, 125, 0.5)",
+                                                borderColor: "rgba(0, 252, 30, 7)",
+                                                data: [65, 59, 80, 81, 56, 55]
+                                            },
+                                            {
+                                                label: ["Tiempo PAMED"],
+                                                backgroundColor: "rgba(0, 0, 255, 0.5)",
+                                                borderColor: "rgba(255, 152, 0, 1)",
+                                                data: [28, 48, 40, 19, 86, 27]
+                                            }
+                                        ]
+                                    };
+                                // Reduce the animation steps for demo clarity.
+                                var myLive = new Chart(canvas, {
+                                    type: 'line',
+                                    data: startingData,
+                                    options: {
+                                        title: {
+                                            display: true,
+                                            text: 'Tiempo Mejores Sucursales',
+                                            fontSize: 20
+                                        },
+                                        scales: {
+                                            yAxes: [{
+                                                ticks: {
+                                                    stepSize: 40,
+                                                },
+                                                scaleLabel: {
+                                                    display: true,
+                                                    labelString: 'Total Turnos Atendidos',
+                                                    fontSize: 20
+                                                }
+                                            }],
+                                            xAxes: [{
+                                                scaleLabel: {
+                                                    display: true,
+                                                    labelString: 'Horas del dia',
+                                                    fontSize: 20
+                                                }
+                                            }],
+
+                                        }
+
+                                    }
+                                });
+
+                                function saveAsPDF10() {
+                                    html2canvas(document.getElementById("chartm1"), {
+                                        onrendered: function (canvas) {
+                                            var img = canvas.toDataURL(); //image data of canvas
+                                            var doc = new jsPDF('l', 'mm', [297, 210]);
+                                            doc.addImage(img, 30, 30);
+                                            doc.save('test.pdf');
+                                        }
+                                    });
+                                }
+
+                                setInterval(function () {
+                                    // Get a random index point
+                                    var indexToUpdates = Math.round(Math.random() * startingData.labels.length);
+
+                                    // Update one of the points in the second dataset
+                                    myLive.data.datasets[0].data[indexToUpdates] = Math.random() * 100;
+
+                                    myLive.update();
+                                }, 5000);
+
+                                
+                            </script>
+                        </div>
+                        <div class="modal-footer">
+                            <button onclick="saveAsPDF10();" class="btn btn-info">
+                                <span class="glyphicon glyphicon-download-alt"></span>Descargar
+                            </button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">salir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- fin modal -->
+            <!--Inicio Principal 2-->
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="box-part text-center">
+                    <div id="chart-containers-p-1">
+                        <canvas id="updating4" width="800" height="450"></canvas>
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+                        <span class="glyphicon glyphicon-fullscreen"></span></button>
+                    <script>
+                        var canvas4 = document.getElementById('updating4'),
+                            startingData = {
+                                labels: ["Cesantias", "VOcho", "VCatorce", "Heroes", "Tramite En Linea"],
+                                datasets: [
+                                    {
+                                        label: "Population (millions)",
+                                        backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+                                        data: [433, 600, 734, 784, 1000]
+                                    }
+                                ]
+                            };
+
+                        // Reduce the animation steps for demo clarity.
+                        var myLiveDos = new Chart(canvas4, {
+                            type: 'doughnut',
+                            data: startingData,
+                            options: {
+                                title: {
+                                    display: true,
+                                    text: 'Turnos mas atendidos en las sucursales',
+                                    fontSize: 20
+                                }
+                            }
+                        });
+
+
+                        setInterval(function () {
+                            // Get a random index point
+                            var indexTodos = Math.round(Math.random() * startingData.labels.length);
+
+                            // Update one of the points in the second dataset
+                            myLiveDos.data.datasets[0].data[indexTodos] = Math.random() * 100;
+
+                            myLiveDos.update();
+                        }, 1000);
+
+
+                        function saveAsPDF() {
+                            html2canvas(document.getElementById("chart-containers-p-1"), {
+                                onrendered: function (canvas) {
+                                    var img = canvas.toDataURL(); //image data of canvas
+                                    var doc = new jsPDF();
+                                    doc.addImage(img, 80, 80);
+                                    doc.save('test.pdf');
+                                }
+                            });
+                        }
+                    </script>
+                </div>
+            </div>
+            <!--Fin principal 2-->
+            <!-- Modal -->
+            <div class="modal fullscreen-modal fade" id="myModal2" tabindex="-1" role="dialog"
+                 aria-labelledby="myModalLabel2">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel2">Estadisticas de todas las sucursales</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div id="chartm-2">
+                                <canvas id="updating-chart-m4" width="800" height="450"></canvas>
+                            </div>
+                            <script>
+                                var canvas4 = document.getElementById('updating-chart-m4'),
+                                    startingData = {
+                                        labels: ["Cesantias", "VOcho", "VCatorce", "Heroes", "Tramite En Linea"],
+                                        datasets: [
+                                            {
+                                                label: "Population (millions)",
+                                                backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+                                                data: [433, 600, 734, 784, 1000]
+                                            }
+                                        ]
+                                    };
+
+                                // Reduce the animation steps for demo clarity.
+                                var myLiveChart4 = new Chart(canvas4, {
+                                    type: 'doughnut',
+                                    data: startingData,
+                                    options: {
+                                        title: {
+                                            display: true,
+                                            text: 'Turnos mas atendidos en las sucursales',
+                                            fontSize: 20
+                                        }
+                                    }
+                                });
+
+
+                                setInterval(function () {
+                                    // Get a random index point
+                                    var indexToUpdate = Math.round(Math.random() * startingData.labels.length);
+
+                                    // Update one of the points in the second dataset
+                                    myLiveChart4.data.datasets[0].data[indexToUpdate] = Math.random() * 100.2;
+
+                                    myLiveChart4.update();
+                                }, 10000);
+
+
+                                function saveAsPDF11() {
+                                    html2canvas(document.getElementById("chartm-2"), {
+                                        onrendered: function (canvas) {
+                                            var img = canvas.toDataURL(); //image data of canvas
+                                            var doc = new jsPDF();
+                                            doc.addImage(img, 80, 80);
+                                            doc.save('test.pdf');
+                                        }
+                                    });
+                                }
+                            </script>
+                        </div>
+                        <div class="modal-footer">
+                            <button onclick="saveAsPDF11();" class="btn btn-info">
+                                <span class="glyphicon glyphicon-download-alt"></span>Descargar
+                            </button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Salir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- fin modal -->
+            <!--Inicio Principal 3-->
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="box-part text-center">
+                    <canvas id="updating5" width="800" height="450"></canvas>
+                    <script>
+                        var canvas5 = document.getElementById('updating5'),
+                            startingData = {
+                                labels: ["PAMED", "PABAR", "SEPBO", "PAIBA", "PAMOL"],
+                                datasets: [
+                                    {
+                                        backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+                                        data: [100, 50, 34, 84, 73]
+                                    }
+                                ]
+                            };
+
+                        // Reduce the animation steps for demo clarity.
+                        var myLiveTres = new Chart(canvas5, {
+                            type: 'polarArea',
+                            data: startingData,
+                            options: {
+                                title: {
+                                    display: true,
+                                    text: 'Tiempos de espera en sala',
+                                    fontSize: 20
+                                }
+                            }
+                        });
+
+
+                        setInterval(function () {
+                            // Get a random index point
+                            var index2 = Math.round(Math.random() * startingData.labels.length);
+
+                            // Update one of the points in the second dataset
+                            myLiveTres.data.datasets[0].data[index2] = Math.random() * 100;
+
+                            myLiveTres.update();
+                        }, 1000);
+                    </script>
+                </div>
+            </div>
+            <!--fin Principal 3-->
+            <!-- Modal -->
+            <div class="modal fullscreen-modal fade" id="myModal3" tabindex="-1" role="dialog"
+                 aria-labelledby="myModalLabel2">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel3">Estadisticas de todas las sucursales</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div id="chart-containers-m-3">
+                                <canvas id="updating-chart-m3" width="800" height="450"></canvas>
+                            </div>
+                            <script>
+                                var canvas4 = document.getElementById('updating-chart-m3'),
+                                    startingData = {
+                                        labels: ["Cesantias", "VOcho", "VCatorce", "Heroes", "Tramite En Linea"],
+                                        datasets: [
+                                            {
+                                                label: "Population (millions)",
+                                                backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+                                                data: [433, 600, 734, 784, 1000]
+                                            }
+                                        ]
+                                    };
+
+                                // Reduce the animation steps for demo clarity.
+                                var myLiveChart4 = new Chart(canvas4, {
+                                    type: 'doughnut',
+                                    data: startingData,
+                                    options: {
+                                        title: {
+                                            display: true,
+                                            text: 'Turnos mas atendidos en las sucursales',
+                                            fontSize: 20
+                                        }
+                                    }
+                                });
+
+
+                                setInterval(function () {
+                                    // Get a random index point
+                                    var indexToUpdate = Math.round(Math.random() * startingData.labels.length);
+
+                                    // Update one of the points in the second dataset
+                                    myLiveChart4.data.datasets[0].data[indexToUpdate] = Math.random() * 100.2;
+
+                                    myLiveChart4.update();
+                                }, 10000);
+
+                            </script>
+                        </div>
+                        <div class="modal-footer">
+                            <button onclick="saveAsPDF();" class="btn btn-info">
+                                <span class="glyphicon glyphicon-download-alt"></span>Descargar
+                            </button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Salir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- fin modal -->
+            <!--Inicio Principal 4-->
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="box-part text-center">
+                    <canvas id="updating6" width="800" height="450"></canvas>
+                    <br>
+                    <script>
+                        var canvas6 = document.getElementById('updating6'),
+                            startingData = {
+                                labels: ["PAMOL", "SEPBO", "PAMED", "PACAR", "PABAR"],
+                                datasets: [
+                                    {
+                                        label: "Turnos Suspendidos",
+                                        backgroundColor: "#3e95cd",
+                                        data: [133, 221, 783, 745, 213]
+                                    }, {
+                                        label: "Turnos Abandonados",
+                                        backgroundColor: "#8e5ea2",
+                                        data: [408, 30, 45, 145, 987]
+                                    }, {
+                                        label: "Turnos Generados",
+                                        backgroundColor: "#4BCDE1",
+                                        data: [24, 147, 345, 98, 612]
+                                    }, {
+                                        label: "Turnos Atendidos",
+                                        backgroundColor: "#5AC91A",
+                                        data: [748, 847, 124, 456, 849]
+                                    }
+                                ]
+                            };
+
+                        // Reduce the animation steps for demo clarity.
+                        var myLiveCuatro = new Chart(canvas6, {
+                            type: 'bar',
+                            data: startingData,
+                            options: {
+                                title: {
+                                    display: true,
+                                    text: 'Promedio de atenciones',
+                                    fontSize: 20
+                                },
+                                scales: {
+                                    yAxes: [{
+                                        ticks: {
+                                            stepSize: 40,
+                                        },
+                                        scaleLabel: {
+                                            display: true,
+                                            labelString: 'Cantidad de turnos',
+                                            fontSize: 20
+                                        }
+                                    }],
+                                    xAxes: [{
+                                        scaleLabel: {
+                                            display: true,
+                                            labelString: 'Sedes',
+                                            fontSize: 20
+                                        }
+                                    }],
+                                }
+                            }
+                        });
+
+
+                        setInterval(function () {
+                            // Get a random index point
+                            var index3 = Math.round(Math.random() * startingData.labels.length);
+
+                            // Update one of the points in the second dataset
+                            myLiveCuatro.data.datasets[index3].data[index3] = Math.random() * 1000;
+
+                            myLiveCuatro.update();
+                        }, 1000);
+                    </script>
+                </div>
+            </div>
+            <!--fin Principal 4d-->
+        </div>
+        <div class="tab-pane" id="Armenia">
+            <div class="text-center" style="font-family: 'Staatliches', cursive; color:#FFD213;">
+                <h1>Sucursal SEPBO</h1>
+            </div>
+            <!--Inicio grafica1 sucursal -->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+                <div class="box-part text-center">
+                    <div id="chart-containers-1">
+                        <canvas id="bar-chartb1" width="800" height="450"></canvas>
+                    </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModals1">
+                        <span class="glyphicon glyphicon-fullscreen"></span></button>
+                    <script>
+                        var canvasb3 = document.getElementById('bar-chartb1'),
+                            startingData = {
+                                labels: ["Daniela Paez", "Juan Perez", "Sara Garon", "Katherine Arango", "David Lopez"],
+                                datasets: [
+                                    {
+                                        label: "Promedio Atencion Servicios",
+                                        backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+                                        data: [2478, 5267, 734, 784, 433]
+                                    }
+                                ]
+                            };
+
+                        // Reduce the animation steps for demo clarity.
+                        var myLiveSuc1 = new Chart(canvasb3, {
+                            type: 'bar',
+                            data: startingData,
+                            options: {
+                                legend: {display: false},
+                                title: {
+                                    display: true,
+                                    text: 'Promedio de atencion por asesosres',
+                                    fontSize: 20
+                                },
+                                scales: {
+                                    yAxes: [{
+                                        scaleLabel: {
+                                            display: true,
+                                            labelString: 'Cantidad Atenciones',
+                                            fontSize: 20
+                                        }
+                                    }],
+                                    xAxes: [{
+                                        scaleLabel: {
+                                            display: true,
+                                            labelString: 'Asesores',
+                                            fontSize: 20
+                                        }
+                                    }],
+
+                                },
+                              animation: {
+                                    duration: 800,
+                                    easing: "easeOutQuart",
+                                    onComplete: function () {
+                                        var ctx = this.chart.ctx;
+                                        ctx.font = '12px LatoRegular, Helvetica,sans-serif';
+                                        ctx.textAlign = 'center';
+                                        ctx.textBaseline = 'bottom';
+                                        this.data.datasets.forEach(function (dataset) {
+                                            for (var i = 0; i < dataset.data.length; i++) {
+                                                var m = dataset._meta[Object.keys(dataset._meta)[0]].data[i]._model;
+                                                ctx.fillText(dataset.data[i], m.x + 1, m.y - 5);
+                                            }
+                                        })
+                                    }
+                                }
+                            }
+                        });
+
+
+                        setInterval(function () {
+                            // Get a random index point
+                            var indexSuc1 = Math.round(Math.random() * startingData.labels.length);
+
+                            // Update one of the points in the second dataset
+                            myLiveSuc1.data.datasets[0].data[indexSuc1] =Math.round( Math.random() * 1000);
+
+                            myLiveSuc1.update();
+                        }, 10000);
+                    </script>
+                </div>
+            </div>
+            <!--Fin grafica 1-->
+
+            <!-- Inicio Modal Suc 1-->
+            <div class="modal fullscreen-modal fade" id="myModals1" tabindex="-1" role="dialog"
+                 aria-labelledby="myModalLabels2">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabels1">Promedio de servicios genereales de
+                                todas las sucursales</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div id="chart-containers-s1">
+                                <canvas id="bar-chartbm1" width="800" height="450"></canvas>
+                            </div>
+
+                            <script>
+                                var canvasbm1 = document.getElementById('bar-chartbm1'),
+                                    startingData = {
+                                        labels: ["Daniela Paez", "Juan Perez", "Sara Garon", "Katherine Arango", "David Lopez"],
+                                        datasets: [
+                                            {
+                                                label: "Promedio Atencion Servicios",
+                                                backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+                                                data: [2478, 5267, 734, 784, 433]
+                                            }
+                                        ]
+                                    };
+
+                                var myLiveSucm1 = new Chart(canvasbm1, {
+                                    type: 'bar',
+                                    data: startingData,
+                                    options: {
+                                        legend: {display: false},
+                                        title: {
+                                            display: true,
+                                            text: 'Promedio  de Atencion por asesores'
+                                        },
+                                        scales: {
+                                            yAxes: [{
+                                                scaleLabel: {
+                                                    display: true,
+                                                    labelString: 'Cantidad Atenciones',
+                                                    fontSize: 20
+                                                }
+                                            }],
+                                            xAxes: [{
+                                                scaleLabel: {
+                                                    display: true,
+                                                    labelString: 'Asesores',
+                                                    fontSize: 20
+                                                }
+                                            }],
+
+                                        },
+                                        animation: {
+                                    duration: 800,
+                                    easing: "easeOutQuart",
+                                    onComplete: function () {
+                                        var ctx = this.chart.ctx;
+                                        ctx.font = '12px LatoRegular, Helvetica,sans-serif';
+                                        ctx.textAlign = 'center';
+                                        ctx.textBaseline = 'bottom';
+                                        this.data.datasets.forEach(function (dataset) {
+                                            for (var i = 0; i < dataset.data.length; i++) {
+                                                var m = dataset._meta[Object.keys(dataset._meta)[0]].data[i]._model;
+                                                ctx.fillText(dataset.data[i], m.x + 1, m.y - 5);
+                                            }
+                                        })
+                                    }
+                                }
+                                    }
+                                });
+
+                                setInterval(function () {
+                                    // Get a random index point
+                                    var indexSucM1 = Math.round(Math.random() * startingData.labels.length);
+
+                                    // Update one of the points in the second dataset
+                                    myLiveSucm1.data.datasets[0].data[indexSucM1] = Math.round( Math.random() * 1000);
+
+                                    myLiveSucm1.update();
+                                }, 10000);
+
+                                function saveAsPDF11() {
+                                    html2canvas(document.getElementById("chart-containers-s1"), {
+                                        onrendered: function (canvas) {
+                                            var img = canvas.toDataURL(); //image data of canvas
+                                            var doc = new jsPDF();
+                                            doc.addImage(img, 80, 80);
+                                            doc.save('test.pdf');
+                                        }
+                                    });
+                                }
+                            </script>
+                        </div>
+                        <div class="modal-footer">
+
+                     <button onclick="saveAsPDF11();" class="btn btn-info">
+                        <span class="glyphicon glyphicon-download-alt">Descargar</span></button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">salir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin modal -->
+
+            <!--Inicio grafica2 sucursal -->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="box-part text-center">
+                    <div id="chart-cSub2">
+                        <canvas id="bar-chart-sus" width="800" height="450"></canvas>
+                    </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModals2">
+                        <span class="glyphicon glyphicon-fullscreen"></span></button>
+                    <script>
+                        var canvasb2 = document.getElementById('bar-chart-sus'),
+                            startingData = {
+                                labels: ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes"],
+                                datasets: [{
+                                    data: [1, 114, 106, 106, 107],
+                                    label: "Almuerzo",
+                                    borderColor: "#3e95cd",
+                                    fill: false
+                                }, {
+                                    data: [282, 350, 411, 502, 635],
+                                    label: "Tramites",
+                                    borderColor: "#8e5ea2",
+                                    fill: false
+                                }, {
+                                    data: [168, 170, 178, 190, 203],
+                                    label: "Baño",
+                                    borderColor: "#3cba9f",
+                                    fill: false
+                                }
+                                ]
+                            };
+
+                        // Reduce the animation steps for demo clarity.
+                        var myLiveChartb2 = new Chart(canvasb2, {
+                            type: 'line',
+                            data: startingData,
+                            options: {
+                                title: {
+                                    display: true,
+                                    text: 'Promedios de Suspensiones'
+                                },
+
+                                scales: {
+                                    yAxes: [{
+                                        scaleLabel: {
+                                            display: true,
+                                            labelString: 'Tiempos',
+                                            fontSize: 20
+                                        }
+                                    }],
+                                    xAxes: [{
+                                        scaleLabel: {
+                                            display: true,
+                                            labelString: 'Dias Suspencion',
+                                            fontSize: 20
+                                        }
+                                    }],
+
+                                }
+                                ,
+                                        animation: {
+                                    duration: 800,
+                                    easing: "easeOutQuart",
+                                    onComplete: function () {
+                                        var ctx = this.chart.ctx;
+                                        ctx.font = '12px LatoRegular, Helvetica,sans-serif';
+                                        ctx.textAlign = 'center';
+                                        ctx.textBaseline = 'bottom';
+                                        this.data.datasets.forEach(function (dataset) {
+                                            for (var i = 0; i < dataset.data.length; i++) {
+                                                var m = dataset._meta[Object.keys(dataset._meta)[0]].data[i]._model;
+                                                ctx.fillText(dataset.data[i], m.x + 1, m.y - 5);
+                                            }
+                                        })
+                                    }
+                                }
+                            }
+                        });
+
+                        setInterval(function () {
+                            // Get a random index point
+                            var indexToUpdate = Math.round(Math.random() * startingData.labels.length);
+
+                            // Update one of the points in the second dataset
+                            myLiveChartb2.data.datasets[indexToUpdate].data[indexToUpdate] = Math.round( Math.random() * 1000);
+
+                            myLiveChartb2.update();
+                        },50000);
+                    </script>
+                </div>
+            </div>
+            <!--Fin grafica 2-->
+
+            <!-- Inicio Modal Suc 2 -->
+            <div class="modal fullscreen-modal fade" id="myModals2" tabindex="-1" role="dialog"
+                 aria-labelledby="myModalLabels2">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabels2">Promedio de servicios genereales de
+                                todas las sucursales</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div id="chart-containers-s2">
+                                <canvas id="barbM2" width="800" height="450"></canvas>
+                            </div>
+
+                            <script>
+                                var canvasbM2 = document.getElementById('barbM2'),
+                                    startingData = {
+                                        labels: ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes"],
+                                        datasets: [{
+                                            data: [1, 114, 106, 106, 107],
+                                            label: "Almuerzo",
+                                            borderColor: "#3e95cd",
+                                            fill: false
+                                        }, {
+                                            data: [282, 350, 411, 502, 635],
+                                            label: "Tramites",
+                                            borderColor: "#8e5ea2",
+                                            fill: false
+                                        }, {
+                                            data: [168, 170, 178, 190, 203],
+                                            label: "Baño",
+                                            borderColor: "#3cba9f",
+                                            fill: false
+                                        }
+                                        ]
+                                    };
+
+                                // Reduce the animation steps for demo clarity.
+                                var myLiveChartbM2 = new Chart(canvasbM2, {
+                                    type: 'line',
+                                    data: startingData,
+                                    options: {
+                                        title: {
+                                            display: true,
+                                            text: 'Promedios de Suspensiones'
+                                        },
+
+                                        scales: {
+                                            yAxes: [{
+                                                scaleLabel: {
+                                                    display: true,
+                                                    labelString: 'Nombres de Usuarios',
+                                                    fontSize: 20
+                                                }
+                                            }],
+                                            xAxes: [{
+                                                scaleLabel: {
+                                                    display: true,
+                                                    labelString: 'Tipos de turnos',
+                                                    fontSize: 20
+                                                }
+                                            }],
+
+                                        },
+                                        animation: {
+                                    duration: 800,
+                                    easing: "easeOutQuart",
+                                    onComplete: function () {
+                                        var ctx = this.chart.ctx;
+                                        ctx.font = '20px LatoRegular, Helvetica,sans-serif';
+                                        ctx.textAlign = 'center';
+                                        ctx.textBaseline = 'bottom';
+                                        this.data.datasets.forEach(function (dataset) {
+                                            for (var i = 0; i < dataset.data.length; i++) {
+                                                var m = dataset._meta[Object.keys(dataset._meta)[0]].data[i]._model;
+                                                ctx.fillText(dataset.data[i], m.x + 1, m.y - 5);
+                                            }
+                                        })
+                                    }
+                                }
+                                    }
+                                });
+
+                                setInterval(function () {
+                                    // Get a random index point
+                                    var indexSubM2 = Math.round(Math.random() * startingData.labels.length);
+
+                                    // Update one of the points in the second dataset
+                                    myLiveChartbM2.data.datasets[indexSubM2].data[indexSubM2] = Math.round( Math.random() * 1000);
+
+                                    myLiveChartbM2.update();
+                                }, 50000);
+
+
+                                 function saveAsPDF12() {
+                                    html2canvas(document.getElementById("chart-containers-s2"), {
+                                        onrendered: function (canvas) {
+                                            var img = canvas.toDataURL(); //image data of canvas
+                                            var doc = new jsPDF();
+                                            doc.addImage(img, 80, 80);
+                                            doc.save('test.pdf');
+                                        }
+                                    });
+                                }
+                            </script>
+                        </div>
+                        <div class="modal-footer">
+
+                    <button onclick="saveAsPDF12();" class="btn btn-info">
+                        <span class="glyphicon glyphicon-download-alt">Descargar</span></button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">salir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fin  modal -->
+
+            <!--Inicio grafica 3 sucursal -->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+                <div class="box-part text-center">
+                    <div id="chart-containers-6">
+                        <canvas id="bubbleSuc3" width="800" height="450"></canvas>
+                    </div>
+                   
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModals3">
+                        <span class="glyphicon glyphicon-fullscreen"></span></button>
+                    <script>
+                        var canvasS3 = document.getElementById('bubbleSuc3'),
+                            startingData = {
+                                labels: ["VOcho", "VCatorce", "Heroes", "Tramite En Linea", "Cesantias"],
+                                datasets: [
+                                    {
+                                        backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+                                        data: [8, 14, 10, 15, 18]
+                                    }
+                                ]
+                            };
+
+                        // Reduce the animation steps for demo clarity.
+                        var myLiveSuc3 = new Chart(canvasS3, {
+                            type: 'doughnut',
+                            data: startingData,
+                            options: {
+                                title: {
+                                    display: true,
+                                    text: 'Turnos con mayor atencion en el dia'
+                                }
+                            }
+                        });
+
+                        setInterval(function () {
+                            // Get a random index point
+                            var indexToSuc3 = Math.round(Math.random() * startingData.labels.length);
+
+                            // Update one of the points in the second dataset
+                            myLiveSuc3.data.datasets[0].data[indexToSuc3] = Math.round( Math.random() * 1000);
+
+                            myLiveSuc3.update();
+                        }, 10000);
+
+                    </script>
+
+                </div>
+            </div>
+            <!--Fin grafica 3-->
+
+            <!-- Inicio Modal Suc 3-->
+            <div class="modal fullscreen-modal fade" id="myModals3" tabindex="-1" role="dialog"
+                 aria-labelledby="myModalLabels3">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabels3">Promedio de servicios genereales de
+                                todas las sucursales</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div id="chartSucM3">
+                                <canvas id="bubbleSucM3" width="800" height="450"></canvas>
+                            </div>
+
+                            <script>
+                                var canvasSM3 = document.getElementById('bubbleSucM3'),
+                                    startingData = {
+                                        labels: ["VOcho", "VCatorce", "Heroes", "Tramite En Linea", "Cesantias"],
+                                        datasets: [
+                                            {
+                                                backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+                                                data: [8, 14, 10, 15, 18]
+                                            }
+                                        ]
+                                    };
+
+                                // Reduce the animation steps for demo clarity.
+                                var myLiveSucM3 = new Chart(canvasSM3, {
+                                    type: 'doughnut',
+                                    data: startingData,
+                                    options: {
+                                        title: {
+                                            display: true,
+                                            text: 'Turnos con mayor atencion en el dia'
+                                        }
+                                    }
+                                });
+
+                                setInterval(function () {
+                                    // Get a random index point
+                                    var indexToSucM3 = Math.round(Math.random() * startingData.labels.length);
+
+                                    // Update one of the points in the second dataset
+                                    myLiveSucM3.data.datasets[0].data[indexToSucM3] = Math.round( Math.random() * 1000);
+
+                                    myLiveSucM3.update();
+                                }, 10000);
+
+
+                                function saveAsPDF13() {
+                                    html2canvas(document.getElementById("chartSucM3"), {
+                                        onrendered: function (canvas) {
+                                            var img = canvas.toDataURL(); //image data of canvas
+                                            var doc = new jsPDF('l', 'mm', [297, 210]);
+                                            doc.addImage(img, 30, 30);
+                                            doc.save('test.pdf');
+                                        }
+                                    });
+                                }
+                            </script>
+                        </div>
+                        <div class="modal-footer">
+                             <button onclick="saveAsPDF13();" class="btn btn-info">
+                        <span class="glyphicon glyphicon-download-alt">Descargar</span></button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">salir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin modal -->
+
+            <!-- Inicio Grafica sucursal 4-->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+                <div class="box-part text-center">
+                    <div id="chart-containers-4">
+                        <canvas id="updating-chart-3" width="800" height="450"></canvas>
+                    </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModals4">
+                        <span class="glyphicon glyphicon-fullscreen"></span></button>
+                    <script>
+                        var canvas3 = document.getElementById('updating-chart-3'),
+                            startingData = {
+                                labels: ["Daniela Lopez", "Juan Roa", "Sara Gomez", "Katherine Avila", "David Arias"],
+                                datasets: [
+                                    {
+                                        label: "Mejor tiempo en horas",
+                                        backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+                                        data: [51, 86, 91, 76, 55]
+                                    }
+                                ]
+                            };
+
+                        // Reduce the animation steps for demo clarity.
+                        var myLiveChart3 = new Chart(canvas3, {
+                            type: 'horizontalBar',
+                            data: startingData,
+                            options: {
+                                legend: {display: false},
+                                title: {
+                                    display: true,
+                                    text: 'Tiempo Promedio Atencion'
+                                },
+                                scales: {
+                                    yAxes: [{
+                                        scaleLabel: {
+                                            display: true,
+                                            labelString: 'Usuarios',
+                                            fontSize: 20
+                                        }
+                                    }],
+                                    xAxes: [{
+                                        scaleLabel: {
+                                            display: true,
+                                            labelString: 'Tiempos',
+                                            fontSize: 20
+                                        }
+                                    }],
+
+                                },
+                                     animation: {
+                                    duration: 800,
+                                    easing: "easeOutQuart",
+                                    onComplete: function () {
+                                        var ctx = this.chart.ctx;
+                                        ctx.font = '12px LatoRegular, Helvetica,sans-serif';
+                                        ctx.textAlign = 'center';
+                                        ctx.textBaseline = 'bottom';
+                                        this.data.datasets.forEach(function (dataset) {
+                                            for (var i = 0; i < dataset.data.length; i++) {
+                                                var m = dataset._meta[Object.keys(dataset._meta)[0]].data[i]._model;
+                                                ctx.fillText(dataset.data[i]+' Minutos', m.x + 1, m.y - 5);
+                                            }
+                                        })
+                                    }
+                                
+                            }
+                        }
+                        });
+
+                        setInterval(function () {
+                            // Get a random index point
+                            var indexToUpdate = Math.round(Math.random() * startingData.labels.length);
+
+                            // Update one of the points in the second dataset
+                            myLiveChart3.data.datasets[0].data[indexToUpdate] =Math.round( Math.random() * 1000);
+                            myLiveChart3.update();
+                        }, 50000);
+
+                    </script>
+
+
+                </div>
+            </div>
+            <!--Fin grafica 4-->
+
+            <!-- Inicio Modal Suc 4-->
+            <div class="modal fullscreen-modal fade" id="myModals4" tabindex="-1" role="dialog"
+                 aria-labelledby="myModalLabels4">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabels4">Promedio de servicios genereales de
+                                todas las sucursales</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div id="chartSucM4">
+                                <canvas id="bubbleSucM4" width="800" height="450"></canvas>
+                            </div>
+
+                            <script>
+                                var canvasM4 = document.getElementById('bubbleSucM4'),
+                                    startingData = {
+                                        labels: ["Daniela Lopez", "Juan Roa", "Sara Gomzez", "Katherine Avila", "David Arias"],
+                                        datasets: [
+                                            {
+                                                label: "Mejor tiempo en horas",
+                                                backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+                                                data: [51, 86, 91, 76, 55]
+                                            }
+                                        ]
+                                    };
+
+                                // Reduce the animation steps for demo clarity.
+                                var myLiveSucM4 = new Chart(canvasM4, {
+                                    type: 'horizontalBar',
+                                    data: startingData,
+                                    options: {
+                                        legend: {display: false},
+                                        title: {
+                                            display: true,
+                                            text: 'Tiempo Promedio Atencion'
+                                        },
+                                        scales: {
+                                            yAxes: [{
+                                                scaleLabel: {
+                                                    display: true,
+                                                    labelString: 'Usuarios',
+                                                    fontSize: 20
+                                                }
+                                            }],
+                                            xAxes: [{
+                                                scaleLabel: {
+                                                    display: true,
+                                                    labelString: 'Tiempos',
+                                                    fontSize: 20
+                                                }
+                                            }],
+
+                                        },
+                                        animation: {
+                                    duration: 800,
+                                    easing: "easeOutQuart",
+                                    onComplete: function () {
+                                        var ctx = this.chart.ctx;
+                                        ctx.font = '12px LatoRegular, Helvetica,sans-serif';
+                                        ctx.textAlign = 'center';
+                                        ctx.textBaseline = 'bottom';
+                                        this.data.datasets.forEach(function (dataset) {
+                                            for (var i = 0; i < dataset.data.length; i++) {
+                                                var m = dataset._meta[Object.keys(dataset._meta)[0]].data[i]._model;
+                                                ctx.fillText(dataset.data[i]+' Minutos', m.x + 1, m.y - 5);
+                                            }
+                                        })
+                                    }
+                                
+                            }
+                                    }
+                                });
+
+                                setInterval(function () {
+                                    // Get a random index point
+                                    var indexToSucM4 = Math.round(Math.random() * startingData.labels.length);
+
+                                    // Update one of the points in the second dataset
+                                    myLiveSucM4.data.datasets[0].data[indexToSucM4] = Math.round(Math.random() * 1000);
+
+                                    myLiveSucM4.update();
+                                }, 1000);
+
+                                function saveAsPDF15() {
+                                    html2canvas(document.getElementById("chartSucM4"), {
+                                        onrendered: function (canvas) {
+                                            var img = canvas.toDataURL(); //image data of canvas
+                                            var doc = new jsPDF('l', 'mm', [297, 210]);
+                                            doc.addImage(img, 30, 30);
+                                            doc.save('test.pdf');
+                                        }
+                                    });
+                                }
+                            </script>
+                        </div>
+                        <div class="modal-footer">
+                            <button onclick="saveAsPDF15();" class="btn btn-info">
+                                <span class="glyphicon glyphicon-download-alt"></span>Descargar
+                            </button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">salir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin modal -->
+
+            <!--Inicio Grafica Sucursal 5-->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+                <div class="box-part text-center">
+                    <div id="chart-containers-h">
+                        <canvas id="updatingSub4" width="800" height="450"></canvas>
+                    </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModals5">
+                        <span class="glyphicon glyphicon-fullscreen"></span></button>
+                    <script>
+                        var canvasSub4 = document.getElementById('updatingSub4'),
+                            startingData = {
+                                labels: ["SEPBO"],
+                                datasets: [
+                                    {
+                                        label: "Suspendidos",
+                                        backgroundColor: "#3e95cd",
+                                        data: [133]
+                                    }, {
+                                        label: "Abandonados",
+                                        backgroundColor: "#8e5ea2",
+                                        data: [408]
+                                    }, {
+                                        label: "Generados",
+                                        backgroundColor: "#4BCDE1",
+                                        data: [24]
+                                    }, {
+                                        label: "Atendidos",
+                                        backgroundColor: "#5AC91A",
+                                        data: [748]
+                                    }
+                                ]
+                            };
+
+                        // Reduce the animation steps for demo clarity.
+                        var myLiveSub4 = new Chart(canvasSub4, {
+                            type: 'bar',
+                            data: startingData,
+                            options: {
+                                title: {
+                                    display: true,
+                                    text: 'Tipos Turnos Atendidos'
+                                },
+                                animation: {
+                                    duration: 800,
+                                    easing: "easeOutQuart",
+                                    onComplete: function () {
+                                        var ctx = this.chart.ctx;
+                                        ctx.font = '12px LatoRegular, Helvetica,sans-serif';
+                                        ctx.textAlign = 'center';
+                                        ctx.textBaseline = 'bottom';
+                                        this.data.datasets.forEach(function (dataset) {
+                                            for (var i = 0; i < dataset.data.length; i++) {
+                                                var m = dataset._meta[Object.keys(dataset._meta)[0]].data[i]._model;
+                                                ctx.fillText('Cantidad: ' + dataset.data[i], m.x + 1, m.y - 5);
+                                            }
+                                        })
+                                    }
+                                }
+                            }
+                        });
+
+
+                        setInterval(function () {
+                            // Get a random index point
+                            var indexSub4 = Math.round(Math.random() * startingData.labels.length);
+
+                            // Update one of the points in the second dataset
+                            myLiveSub4.data.datasets[0].data[indexSub4] = Math.round( Math.random() * 1000);
+
+                            myLiveSub4.update();
+                        }, 1000);
+                    </script>
+
+
+                </div>
+            </div>
+            <!--Fin Suc5-->
+
+            <!-- Modal Sub 4 -->
+            <div class="modal fullscreen-modal fade" id="myModals5" tabindex="-1" role="dialog"
+                 aria-labelledby="myModalLabels5">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabels5">Promedio de servicios genereales de
+                                todas las sucursales</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div id="containers-s5">
+                                <canvas id="updatingSubM4" width="800" height="450"></canvas>
+                            </div>
+
+                            <script>
+                                var canvasSubM4 = document.getElementById('updatingSubM4'),
+                                    startingData = {
+                                        labels: ["SEPBO"],
+                                        datasets: [
+                                            {
+                                                label: "Suspendidos",
+                                                backgroundColor: "#3e95cd",
+                                                data: [133]
+                                            }, {
+                                                label: "Abandonados",
+                                                backgroundColor: "#8e5ea2",
+                                                data: [408]
+                                            }, {
+                                                label: "Generados",
+                                                backgroundColor: "#4BCDE1",
+                                                data: [24]
+                                            }, {
+                                                label: "Atendidos",
+                                                backgroundColor: "#5AC91A",
+                                                data: [748]
+                                            }
+                                        ]
+                                    };
+
+                                // Reduce the animation steps for demo clarity.
+                                var myLiveSubM4 = new Chart(canvasSubM4, {
+                                    type: 'bar',
+                                    data: startingData,
+                                    options: {
+                                        animation: {
+                                            duration: 800,
+                                            easing: "easeOutQuart",
+                                            onComplete: function () {
+                                                var ctx = this.chart.ctx;
+                                                ctx.font = '12px LatoRegular, Helvetica,sans-serif';
+                                                ctx.textAlign = 'center';
+                                                ctx.textBaseline = 'bottom';
+                                                this.data.datasets.forEach(function (dataset) {
+                                                    for (var i = 0; i < dataset.data.length; i++) {
+                                                        var m = dataset._meta[Object.keys(dataset._meta)[0]].data[i]._model;
+                                                        ctx.fillText('Cantidad: ' + dataset.data[i], m.x + 1, m.y - 5);
+                                                    }
+                                                })
+                                            }
+                                        }
+                                    }
+                                });
+                                setInterval(function () {
+                                    // Get a random index point
+                                    var indexSubM4 = Math.round(Math.random() * startingData.labels.length);
+
+                                    // Update one of the points in the second dataset
+                                    myLiveSubM4.data.datasets[0].data[indexSubM4] = Math.random() * 200;
+
+                                    myLiveSubM4.update();
+                                }, 50000);
+
+                                function saveAsPDF1() {
+                                    html2canvas(document.getElementById("containers-s5"), {
+                                        onrendered: function (canvas) {
+                                            var img = canvas.toDataURL(); //image data of canvas
+                                            var doc = new jsPDF('l', 'mm', [297, 210]);
+                                            doc.addImage(img, 80, 80);
+                                            doc.save('test.pdf');
+                                        }
+                                    });
+                                }
+                            </script>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button onclick="saveAsPDF1();" class="btn btn-info">
+                                <span class="glyphicon glyphicon-download-alt"></span>Descargar
+                            </button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">salir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin modal 4-->
+
+            <!--Inicio grafica Sucursal 6-->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+                <div class="box-part text-center">
+                    <div id="chart-containers-5">
+                        <canvas id="updatingSub6" width="800" height="450"></canvas>
+                    </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModals6">
+                        <span class="glyphicon glyphicon-fullscreen"></span></button>
+                    <script>
+                        var canvasSub6 = document.getElementById('updatingSub6'),
+                            startingData = {
+                                labels: ["VOcho", "VCatorce", "Heroes", "Tramite En Linea", "Cesantias"],
+                                datasets: [
+                                    {
+                                        label: "Ayer",
+                                        fill: true,
+                                        backgroundColor: "rgba(179,181,198,0.2)",
+                                        borderColor: "rgba(179,181,198,1)",
+                                        pointBorderColor: "#fff",
+                                        pointBackgroundColor: "rgba(179,181,198,1)",
+                                        data: [50, 41, 21, 6, 100]
+                                    }, {
+                                        label: "Hoy",
+                                        fill: true,
+                                        backgroundColor: "rgba(255,99,132,0.2)",
+                                        borderColor: "rgba(255,99,132,1)",
+                                        pointBorderColor: "#fff",
+                                        pointBackgroundColor: "rgba(255,99,132,1)",
+                                        pointBorderColor: "#fff",
+                                        data: [25, 54, 7, 8, 10]
+                                    }
+                                ]
+                            };
+
+                        // Reduce the animation steps for demo clarity.
+                        var myLiveSub6 = new Chart(canvasSub6, {
+                            type: 'radar',
+                            data: startingData,
+                            options: {
+                                title: {
+                                    display: true,
+                                    text: 'VS Tipos Turnos hoy Y ayer'
+                                }
+                            }
+                        });
+
+
+                        setInterval(function () {
+                            // Get a random index point
+                            var indexToSub6 = Math.round(Math.random() * startingData.labels.length);
+
+                            // Update one of the points in the second dataset
+                            myLiveSub6.data.datasets[indexToSub6].data[indexToSub6] = Math.random() * 50;
+
+                            myLiveSub6.update();
+                        }, 50000);
+
+                    </script>
+
+
+                </div>
+            </div>
+            <!-- Fin Sucursal 6-->
+
+            <!-- Modal Sub 6-->
+            <div class="modal fullscreen-modal fade" id="myModals6" tabindex="-1" role="dialog"
+                 aria-labelledby="myModalLabels6">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabels6">Promedio de servicios genereales de
+                                todas las sucursales</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div id="chart-containers-s6">
+                                <canvas id="updatingSubM6" width="800" height="450"></canvas>
+                            </div>
+
+                            <script>
+                               var canvasSub6 = document.getElementById('updatingSubM6'),
+                            startingData = {
+                                labels: ["VOcho", "VCatorce", "Heroes", "Tramite En Linea", "Cesantias"],
+                                datasets: [
+                                    {
+                                        label: "Ayer",
+                                        fill: true,
+                                        backgroundColor: "rgba(179,181,198,0.2)",
+                                        borderColor: "rgba(179,181,198,1)",
+                                        pointBorderColor: "#fff",
+                                        pointBackgroundColor: "rgba(179,181,198,1)",
+                                        data: [50, 41, 21, 6, 100]
+                                    }, {
+                                        label: "Hoy",
+                                        fill: true,
+                                        backgroundColor: "rgba(255,99,132,0.2)",
+                                        borderColor: "rgba(255,99,132,1)",
+                                        pointBorderColor: "#fff",
+                                        pointBackgroundColor: "rgba(255,99,132,1)",
+                                        pointBorderColor: "#fff",
+                                        data: [25, 54, 7, 8, 10]
+                                    }
+                                ]
+                            };
+
+                        // Reduce the animation steps for demo clarity.
+                        var myLiveSub6 = new Chart(canvasSub6, {
+                            type: 'radar',
+                            data: startingData,
+                            options: {
+                                title: {
+                                    display: true,
+                                    text: 'VS Tipos Turnos hoy Y ayer'
+                                }
+                            }
+                        });
+
+
+                        setInterval(function () {
+                            // Get a random index point
+                            var indexToSub6 = Math.round(Math.random() * startingData.labels.length);
+
+                            // Update one of the points in the second dataset
+                            myLiveSub6.data.datasets[indexToSub6].data[indexToSub6] = Math.random() * 50;
+
+                            myLiveSub6.update();
+                        }, 50000);
+
+                                function saveAsPDF() {
+                                    html2canvas(document.getElementById("chart-containers-s6"), {
+                                        onrendered: function (canvas) {
+                                            var img = canvas.toDataURL(); //image data of canvas
+                                            var doc = new jsPDF('l', 'mm', [297, 210]);
+                                            doc.addImage(img, 80, 80);
+                                            doc.save('test.pdf');
+                                        }
+                                    });
+                                }
+                            </script>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button onclick="saveAsPDF();" class="btn btn-info">
+                                <span class="glyphicon glyphicon-download-alt"></span>Descargar
+                            </button>
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal">salir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin modal 6-->
+
+        </div>
+    </div>
+</div>
+<footer>
+    <p>© 2018<a style="color:#0a93a6; text-decoration:none;" href="http://www.stefaninicolombia.com/"> Stefanini</a>,
+        Todos los derechos reservados.</p>
+</footer>
+</body>
+<!-- TEMPLATE NOTIFICATION -->
+<script id="notificationTemplate" type="text/html">
+    <!-- NOTIFICATION -->
+    <a class="dropdown-item dropdown-notification" href="{{href}}">
+        <div class="notification-read">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <img class="notification-img" src="https://placehold.it/48x48" alt="Icone Notification"/>
+        <div class="notifications-body">
+            <p class="notification-texte">{{texte}}</p>
+            <p class="notification-date text-muted">
+                <i class="fa fa-clock-o" aria-hidden="true"></i> {{date}}
+            </p>
+        </div>
+    </a>
+</script>
+</html>
